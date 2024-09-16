@@ -1,0 +1,88 @@
+body{
+    background-image: linear-gradient(red , black );
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+form{
+    position: relative;
+    left: 25%;;
+    display: grid;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    top: 20vh;
+    height: 50vh;
+    background: linear-gradient(20deg, red 20%, black);
+    font-size: 2rem;
+    height: auto;
+    border: 2px solid #fff;
+    
+}
+input, button{
+    padding: .1rem;
+    margin-bottom: 10px;
+    width: -webkit-fill-available;
+}
+#recover{
+    background: transparent;
+    cursor: pointer;
+    display: none;
+}
+#sign{
+    background: transparent;
+    color: #fff;
+    border: 1px solid #fff;
+    cursor: pointer;
+}
+#login{
+    background: #fff;
+    border: none;
+    cursor: pointer;
+}
+#sign:active{
+    background: transparent;
+    color: white;   
+    border: 2px solid #000;
+    
+}
+
+#login:active{
+    background: transparent;
+    border: 2px solid #fff;
+}
+#recover:active{
+    border: 2px solid #fff;
+}
+
+#login[disabled]{
+    opacity: .7;
+}
+
+#erroremail, #errorpassword{
+    background: white;
+    color: red;
+    font-size: 1rem;
+}
+
+/*Lading*/
+
+.loading{
+    position: fixed;
+    background: rgb(255, 255, 255, .5);
+    width: 100%;
+    height: 100%;
+    top: 0rem;
+    left: 0;
+    display: flex;
+    font-size: 5rem;
+    align-items: center;
+        justify-content: center;
+        text-align: center;
+}
+
+/*End of loading*/
+
+

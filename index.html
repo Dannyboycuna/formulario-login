@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+</head>
+<body>
+
+    <form action="">
+
+        <div><label for="email">Email: </label></div>
+        <input type="email" name="email" id="email" placeholder="your@email.com">
+        <div class="erroremail" id="erroremail"></div>
+        <div><label for="password">Password: </label></div>
+        <input type="password" name="password" id="password" placeholder="Password">
+        <div class="errorpassword" id="errorpassword"></div>
+        <div><input type="button" value="Login in"  onchange="verify()" id="login"></div>
+        <div>
+            <input type="button" value="Recover Password" id="recover" >
+        </div>
+        <div><input type="button" value="Sign in" id="sign"></div>
+
+        
+    </form>
+    
+    
+</body>
+<link rel="stylesheet" href="main.css">
+<script src="main.js"></script>
+<script src="loading.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.13.1/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.13.1/firebase-auth-compat.js"></script>
+<script>
+
+    const firebaseConfig = {
+        apiKey: "AIzaSyAWhZMxnQZLLP9dnAspd1CD5QBFMsK4SL4",
+        authDomain: "trite-control.firebaseapp.com",
+        projectId: "trite-control",
+        storageBucket: "trite-control.appspot.com",
+        messagingSenderId: "829661264484",
+        appId: "1:829661264484:web:a6324a960e94822b1ebd71"
+    };
+    firebase.initializeApp(firebaseConfig)
+    
+     // Initialize Firebase
+
+</script>
+</html>
